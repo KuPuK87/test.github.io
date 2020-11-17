@@ -103,7 +103,12 @@ h2::after {
     color: #ffffff;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* MAIN */
+
 .main {
     text-align: center;
     padding: 240px 0;
@@ -429,4 +434,97 @@ h2::after {
 .day_time-action span {
     font-weight: 400;
     font-size: 14px;
+}
+
+/* NEWS */
+.news {
+    background-image: url(../images/news_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news_block {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.news_block-item {
+    width: 24%;
+}
+
+.news_block-item img {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.news_block-item h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #393939;
+}
+
+.news_block-item p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #393939;
+}
+
+.control_for_slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.prev {
+    position: absolute;
+    left: -15px;
+    top: 30%;
+    font-size: 20px;
+    color: #888888;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    right: -15px;
+    top: 30%;
+    font-size: 20px;
+    color: #888888;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.news button {
+    margin-top: 30px;
+    padding: 16px 44px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #393939;
+    border-radius: 5px;
+    border: 3px solid #B0975E;
+    border-image: linear-gradient(to right top, #ffffff, #B0975E, #ffffff);
+    border-image-slice: 1;
+    background-color: transparent;
+}
+
+.news button:after {
+    content: ">";
+    color:  #B0975E;
+    margin-left: 13px;
+    font-size: 18px;
+    
 }
