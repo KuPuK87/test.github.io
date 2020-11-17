@@ -245,8 +245,6 @@ h2::after {
     left: 2.5%;
 }
 
-
-
 /* BOOKING */
 
 .booking {
@@ -261,8 +259,6 @@ h2::after {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.booking h2 {}
 
 .booking_block {
     width: 100%;
@@ -309,4 +305,128 @@ h2::after {
 .booking_block-item p {
     text-align: center;
     margin-top: 25px;
+}
+
+/* CALENDAR */
+
+.calendar .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calendar_block {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar_day {
+    display: flex;
+    align-items: center;
+}
+
+.today {
+    width: 23%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    color: #393939;
+    background-color: #F4E101;
+}
+
+.today span {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.calendar_week {
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar_week li {
+    width: 100%;
+    text-align: center;
+}
+
+.calendar_week li:not(:last-child) {
+    border-right: 1px solid #D3D3D3;
+}
+
+.calendar_week li a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #303030;
+}
+
+.calendar_week li a.active {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #465177;
+}
+
+.day_activity {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
+}
+
+.day_time {
+    margin-top: 2px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: span 1;
+    position: relative;
+}
+
+.time_now {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.day_time:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFA;
+}
+
+.day_time:last-child a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #303030;
+}
+
+.day_time img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.day_time-action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(90% - 20px);
+    padding: 7px 10px;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 60%;
+    color: #393939;
+}
+
+.day_time-action span {
+    font-weight: 400;
+    font-size: 14px;
 }
