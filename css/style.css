@@ -294,8 +294,16 @@ h2::after {
     border-bottom-right-radius: 5px;
 }
 
-.booking_block-item:before {
-    
+.booking_block-item:not(:last-child):before {
+    position: absolute;
+    content: '>';
+    font-size: 22px;
+    font-weight: bold;
+    width: 7px;
+    height: 12px;
+    color: #888888;
+    right: -17px;
+    top: 43%;
 }
 
 .booking_block-item p {
