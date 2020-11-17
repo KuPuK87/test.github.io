@@ -250,7 +250,7 @@ h2::after {
 /* BOOKING */
 
 .booking {
-    background-image: url(/images/img3.png);
+    background-image: url(../images/img3.png);
     background-color: #ffff;
     background-repeat: no-repeat;
     background-size: 100% 450px;
