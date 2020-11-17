@@ -1,0 +1,174 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Neo Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 80%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 90px 0;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #465177;
+    position: relative;
+}
+
+h2::before,
+h2::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #BABABA;
+    bottom: -5px;
+}
+
+h2::after {
+    bottom: -10px;
+    left: 15px;
+}
+
+/* HEADER */
+
+.head .container {
+    display: flex;
+    padding: 22px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 25px;
+}
+
+.head_phone a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #393939;
+}
+
+.nav {
+    background: linear-gradient(270deg, #F4E101 0%, #6876CB 100%);
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 0;
+}
+
+.nav ul li {
+    padding: 0 5%;
+    border-right: 1px solid #ffffff;
+}
+
+.nav ul li:first-child {
+    border-left: 1px solid #ffffff;
+}
+
+.nav ul li a {
+    color: #ffffff;
+}
+
+/* MAIN */
+.main {
+    text-align: center;
+    padding: 240px 0;
+    background-image: url(../images/header_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main h1 {
+    font-weight: 900;
+    font-size: 145px;
+    line-height: 174px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 18px 22px rgba(0, 0, 0, 0.42);
+}
+
+.main_name {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main button {
+    font-family: 'Neo Sans Pro', sans-serif;
+    font-style: normal;
+    padding: 20px 95px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #393939;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    background-image: url(../images/Rectangle13.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid rgb(145, 134, 17);
+}
+
+
+/* ABOUT */
+
+.about_us .container {
+    position: relative;
+}
+
+.about_block {
+    width: 58%;
+}
+
+.about_block:first-child {
+    width: 37%;
+}
+
+.about_block p {
+    margin-top: 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #393939;
+}
